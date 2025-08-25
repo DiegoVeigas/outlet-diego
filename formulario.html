@@ -69,10 +69,6 @@
     .formulario-endereco form button:hover {
       background: #0056b3;
     }
-
-    a{
-      text-decoration: none;
-    }
   </style>
 </head>
 <body>
@@ -80,12 +76,11 @@
     <h3>Informações de Entrega</h3>
     <form>
       <input type="text" name="nome" placeholder="Nome completo" required>
-
       <input type="text" name="rua" placeholder="Rua" required>
       <input type="text" name="numero" placeholder="Número" required>
       <input type="text" name="bairro" placeholder="Bairro" required>
       <input type="text" name="pontoReferencia" placeholder="Ponto de referência" required>
-      <input type="text" name="cep" placeholder="CEP" required>
+      <input type="number" name="cep" placeholder="CEP" required>
 
       <div class="uf-cidade">
         <select name="uf" required>
@@ -121,7 +116,8 @@
         <input type="text" name="cidade" placeholder="Cidade" required>
       </div>
 
-      <a href="pagamento.html"><button type="input">Enviar</button></a>
+      <!-- Botão agora redireciona direto -->
+      <button type="button" onclick="window.location.href='pagamento.html'">Enviar</button>
     </form>
   </div>
 </body>
